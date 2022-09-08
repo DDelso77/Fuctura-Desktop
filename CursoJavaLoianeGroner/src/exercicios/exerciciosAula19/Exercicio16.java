@@ -35,12 +35,15 @@ elementos armazenados no vetor que são superiores a 15.*/
 		System.out.println("A soma dos valores igual a 15 é = "+igual);
 		
 		int maior = 0;
+		int media = 0;
 		for(int i=0;i<vetorA.length;i++) {
 			if(vetorA[i]>15) {
 				maior += vetorA[i];
+				media=vetorA[i]++;
+				
 			}
 		}
-		System.out.println("A soma dos valores maior que 15 é = "+maior);
+		System.out.println("A média dos valores maior que 15 é = "+media);
 
 	}
 
