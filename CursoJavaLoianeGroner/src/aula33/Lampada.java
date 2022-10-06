@@ -1,0 +1,107 @@
+package aula33;
+
+public class Lampada {
+	
+	private String modelo;
+	private String tensao;
+	private int potencia;
+	private String tipoLuz;
+	private int garantiaMeses;
+	private String [] tipo;
+	private boolean tipoAbajur;
+	private boolean ligada;
+	
+	public Lampada() {}
+		
+	public Lampada(String modelo, String tensao, int potencia, String tipoLuz, int garantiaMeses, String[] tipo,
+			boolean tipoAbajur, boolean ligada) {
+		super();
+		this.modelo = modelo;
+		this.tensao = tensao;
+		this.potencia = potencia;
+		this.tipoLuz = tipoLuz;
+		this.garantiaMeses = garantiaMeses;
+		this.tipo = tipo;
+		this.tipoAbajur = tipoAbajur;
+		this.ligada = ligada;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public String getTensao() {
+		return tensao;
+	}
+	public void setTensao(String tensao) {
+		this.tensao = tensao;
+	}
+	public int getPotencia() {
+		return potencia;
+	}
+	public void setPotencia(int potencia) {
+		this.potencia = potencia;
+	}
+	public String getTipoLuz() {
+		return tipoLuz;
+	}
+	public void setTipoLuz(String tipoLuz) {
+		this.tipoLuz = tipoLuz;
+	}
+	public int getGarantiaMeses() {
+		return garantiaMeses;
+	}
+	public void setGarantiaMeses(int garantiaMeses) {
+		this.garantiaMeses = garantiaMeses;
+	}
+	public String[] getTipo() {
+		return tipo;
+	}
+	public void setTipo(String[] tipo) {
+		this.tipo = tipo;
+	}
+	public boolean isTipoAbajur() {
+		return tipoAbajur;
+	}
+	public void setTipoAbajur(boolean tipoAbajur) {
+		this.tipoAbajur = tipoAbajur;
+	}
+	public boolean isLigada() {
+		return ligada;
+	}
+	public void setLigada(boolean ligada) {
+		this.ligada = ligada;
+	}
+	
+	public void ligar() {
+		setLigada(true);
+	}
+	
+	public void desligar() {
+		setLigada(false);
+	}
+	
+	public void mostrarEstado() {
+		if(isLigada()) {
+			System.out.println("Lamapada ligada!");
+		} else {
+			System.out.println("Lampada desligada!");
+		}
+	}
+	
+	public void mudarEstado() {
+		if(isLigada()) {
+			desligar();
+		} else {
+			ligar();
+		}
+	}
+	
+	
+	}
+	
+
+
+
